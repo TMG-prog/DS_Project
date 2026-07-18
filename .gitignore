@@ -3,3 +3,5 @@
 
 # ignore Python runtime cache files
 __pycache__/
+
+testing_venv/
