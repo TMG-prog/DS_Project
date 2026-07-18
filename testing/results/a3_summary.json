@@ -1,0 +1,24 @@
+{
+  "recovery_time_seconds": 9.865931987762451,
+  "log": [
+    "\nGET /rep",
+    "-> 200: {'message': {'N': 4, 'replicas': ['S5a970', 'S7215d', 'S31f16', 'Sbce82']}, 'status': 'successful'}",
+    "\nPOST /add (valid: n=1, hostnames=[TestServerA])",
+    "-> 200: {'message': {'N': 5, 'replicas': ['S5a970', 'S7215d', 'S31f16', 'Sbce82', 'TestServerA']}, 'status': 'successful'}",
+    "\nPOST /add (error case: hostnames longer than n)",
+    "-> 400: {'message': '<Error> Length of hostname list is more than newly added instances', 'status': 'failure'}",
+    "\nGET /rep",
+    "-> 200: {'message': {'N': 5, 'replicas': ['S5a970', 'S7215d', 'S31f16', 'Sbce82', 'TestServerA']}, 'status': 'successful'}",
+    "\nDELETE /rm (valid: n=1, hostnames=[TestServerA])",
+    "-> 200: {'message': {'N': 4, 'replicas': ['S5a970', 'S7215d', 'S31f16', 'Sbce82']}, 'status': 'successful'}",
+    "\nDELETE /rm (error case: hostnames longer than n)",
+    "-> 400: {'message': '<Error> Length of hostname list is more than removable instances', 'status': 'failure'}",
+    "\nGET /home (valid forwarded endpoint)",
+    "-> 200: {'message': 'Hello from Server: S31f16', 'status': 'successful'}",
+    "\nGET /doesnotexist (invalid forwarded endpoint)",
+    "-> 400: {'message': \"<Error> '/doesnotexist' endpoint does not exist in server replicas\", 'status': 'failure'}",
+    "\nFailure recovery test",
+    "Killing container 'S5a970' directly via docker kill (expected N stays at 4)",
+    "Recovered in 9.9s. New replicas: ['S7215d', 'S31f16', 'Sbce82', 'S1cef6']"
+  ]
+}
