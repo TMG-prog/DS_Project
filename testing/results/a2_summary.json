@@ -1,0 +1,101 @@
+{
+  "n_values": [
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "requests_per_n": 2000,
+  "means": [
+    1000,
+    666.6666666666666,
+    500,
+    400,
+    333.3333333333333
+  ],
+  "stddevs": [
+    1069.1454531540599,
+    734.9641714623464,
+    511.53820320024323,
+    476.50970609212146,
+    297.09504651990864
+  ],
+  "details": {
+    "2": {
+      "replicas": [
+        "Server1",
+        "Server3"
+      ],
+      "counts": {
+        "Server1": 1756,
+        "Server3": 244
+      },
+      "failures": 0
+    },
+    "3": {
+      "replicas": [
+        "Server1",
+        "Server3",
+        "S5a970"
+      ],
+      "counts": {
+        "Server3": 263,
+        "Server1": 1515,
+        "S5a970": 222
+      },
+      "failures": 0
+    },
+    "4": {
+      "replicas": [
+        "Server1",
+        "Server3",
+        "S5a970",
+        "S7215d"
+      ],
+      "counts": {
+        "Server1": 1266,
+        "Server3": 252,
+        "S7215d": 277,
+        "S5a970": 205
+      },
+      "failures": 0
+    },
+    "5": {
+      "replicas": [
+        "Server1",
+        "Server3",
+        "S5a970",
+        "S7215d",
+        "Sb502b"
+      ],
+      "counts": {
+        "Server1": 1240,
+        "S5a970": 76,
+        "S7215d": 281,
+        "Server3": 250,
+        "Sb502b": 153
+      },
+      "failures": 0
+    },
+    "6": {
+      "replicas": [
+        "Server1",
+        "Server3",
+        "S5a970",
+        "S7215d",
+        "Sb502b",
+        "S31f16"
+      ],
+      "counts": {
+        "Server3": 239,
+        "S31f16": 912,
+        "Sb502b": 138,
+        "S7215d": 314,
+        "S5a970": 92,
+        "Server1": 305
+      },
+      "failures": 0
+    }
+  }
+}

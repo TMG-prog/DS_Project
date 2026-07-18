@@ -1,0 +1,9 @@
+{
+  "num_requests": 10000,
+  "counts": {
+    "Server2": 4070,
+    "Server3": 3229,
+    "Server1": 2701
+  },
+  "failures": 0
+}
