@@ -6,6 +6,11 @@ This project implements a distributed load balancing system using Docker contain
 
 ## Group Members
 
+164643 - GITAU MUGURE TRACY  
+166142 - NJIHIA MURANGA  
+168971 -PHILLIP GAKUO  
+166370 - NAOMI TEKO CHENANGAT
+
 
 
 ## Technologies
@@ -21,7 +26,7 @@ This project implements a distributed load balancing system using Docker contain
 Clone the repository
 
 ```bash
-git clone <repository-url>
+git clone < https://github.com/TMG-prog/DS_Project.git >
 cd DS_Project
 ```
 
