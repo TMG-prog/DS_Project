@@ -4,7 +4,7 @@
 
 This project implements a distributed load balancing system using Docker containers. The system dynamically routes client requests across multiple server replicas using consistent hashing to achieve balanced load distribution. It also monitors server health and automatically replaces failed replicas.
 
-## Group Members
+## Group Members (4A)
 
 164643 - GITAU MUGURE TRACY  
 166142 - NJIHIA MURANGA  
